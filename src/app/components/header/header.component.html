@@ -1,0 +1,20 @@
+<header>
+    <div class="logo">
+      <h1>&lt;/&gt; <span class="desktop">{{title}}</span></h1>
+    </div>
+    <div class="menu desktop">
+      <ul class="menu">
+        <li><a href="#tech">Technologie</a></li>
+        <li><a href="#news">Wiadomości</a></li>
+      </ul>
+    </div>
+    <div class="menu mobile">
+      <mat-icon (click)="toggleDisplay()">{{menu}}</mat-icon>
+      <div [hidden]="!isShow">
+        <ul class="menu">
+          <li><a href="#news">Wiadomości</a></li>
+          <li><a href="#tech">Technologie</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>

@@ -1,0 +1,60 @@
+@import '../../../assets/zmienne';
+
+header {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.logo {
+    float: left;
+    width: 50%;
+}
+.desktop .menu li {
+    display: inline;
+    float: right;
+    text-align: right;
+    margin-right: 20px;
+}
+.menu li a { 
+    text-decoration: none;
+    color: $lightBlack;
+    font-size: 16px;
+}
+.menu a:hover{
+    position: relative;
+    color: $orangeDark !important;
+}
+.menu a:hover:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    margin-bottom: -5px;
+    border-bottom: 1px solid $orangeDark;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        width: 100vw;
+        margin: 25px auto 0 auto;
+        padding: 0 10vw;
+    }
+    .menu {
+        float: right;
+        text-align: right;
+    }
+    .menu ul {
+        position: fixed;
+        list-style: none;
+        margin-left: -100px;
+        margin-top: 0;
+        z-index: 5;
+    }
+    .menu li {
+        text-align: right;
+        list-style: none;
+        margin-bottom: 7px;
+    }
+}

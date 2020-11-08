@@ -1,0 +1,59 @@
+@import '../../../assets/zmienne';
+
+#tech{
+    float: left;
+    margin-left: 50px;
+}
+.tech-box{
+    width: 220px;
+    height: 220px;
+    background: $white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 0;
+    vertical-align: middle;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tech-box > div {
+    width: 100%;
+    flex-basis: 100%;
+    margin: 0;
+    padding:0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    box-sizing: border-box;
+    &.img {
+        padding-top: 30px;
+        height: 90px;
+    }
+    &.hr{
+        height: 10px;
+    }
+    &.desc{
+        height: 70px;
+    }
+}
+.tech-box > div > hr {
+    width: 25px;
+    background: $black;
+    height: 2px;
+    border: 0;
+}
+.tech-box:hover > div > hr {
+    width: 25px;
+    background: $orange;
+    height: 2px;
+}
+.tech-box > img {
+    max-width: 80px;
+    max-height: 80px;
+    &.npm{
+        max-height: 30px;
+    }
+}

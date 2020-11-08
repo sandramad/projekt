@@ -1,0 +1,12 @@
+<div *ngIf="action==0" class="slider-login">
+    <h2>Dzień dobry</h2>
+<button (click)="goLogin()" class="button-primary">Zaloguj się</button>
+<span class="gray">lub</span>
+<button (click)="goRegister()" class="button-secondary">Zarejestruj</button>
+</div>
+<div *ngIf="action==1">
+    Logowanie
+</div>
+<div *ngIf="action==2">
+    Rejestracja
+</div>

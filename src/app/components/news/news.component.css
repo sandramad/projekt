@@ -1,0 +1,21 @@
+
+h2 {
+  font-size: 24px;
+  line-height: 33px;
+  background: url("/assets/art.png") no-repeat;
+  background-size: 35px;
+  padding-left: 38px;
+}
+
+img {
+  width: 90%;
+  clear: both;
+  display: block;
+}
+
+.arts {
+  display: inline;
+  margin: 20px 2% 0 2%;
+  width: 46%;
+  float: left;
+}

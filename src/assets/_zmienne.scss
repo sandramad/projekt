@@ -1,0 +1,21 @@
+// Kolory wykorzystywane w aplikacji
+$blueLight: #F7F9FB; // tło aplikacji
+$black: #000; // kolor tekstu
+$lightBlack: #272727; // kolor w menu
+$white: #fff; // kolor tła
+$gray: #7D7C83;
+$orange: #F49E4C; // przycisk primary
+$orangeDark: #E06D00; // przycisk kliknięty, linki
+$red: #EB5757;
+$blue: #118AB2; // stopka 
+
+// czcionki:
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+$khula: 'Khula', sans-serif !important;
+$openSans: 'Open Sans', sans-serif !important;
+
+// inne zmienne
+$corner: 20px;

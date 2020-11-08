@@ -1,0 +1,85 @@
+@import 'assets/zmienne';
+
+html, body {
+    background: $blueLight;
+    scroll-behavior: smooth;
+    color: $black;
+    margin: 0;
+    padding: 0;
+    font-family: $openSans;
+    width: 100vw;
+    overflow-x: hidden;
+}
+h1 {
+    font-size: 36px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: $lightBlack;
+}
+a {
+    color: $orange;
+    text-decoration: none;
+}
+a:hover {
+    color: $orangeDark;
+    text-decoration: none;
+}
+.button-primary{
+    background: $orange;
+    height: 40px;
+    width: 230px;
+    border-radius: $corner;
+    color: $white;
+    font-size: 16px;
+    border: 0;
+    margin: 0;
+}
+.button-primary:hover{
+    background: $orangeDark;
+}
+.button-secondary {
+    height: 40px;
+    width: 230px;
+    background: $white;
+    border-radius: $corner;
+    border: 1px solid $orange;
+    font-size: 16px;
+    color: $orange;
+    margin: 0;
+}
+.button-secondary:hover {
+    background: $orange;
+    color: $white;
+}
+.content {
+    margin: 55px auto;
+    width: 80vw;
+
+}
+.desktop {
+    display: inline;
+}
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    html, body {
+        background: $white;
+    }
+    .content {
+        margin: 1px auto;
+        width: 100vw;
+    
+    }    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: inline;
+    }
+}

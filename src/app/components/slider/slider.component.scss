@@ -1,0 +1,49 @@
+@import '../../../assets/zmienne';
+#app-slider{
+    float: left;
+    width: 100%;
+    display: flex;
+    background: $white;
+    border-radius: $corner;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07);
+}
+#slider {
+    width: 50%;
+    display: inline-flex;
+    float: left;
+}
+#slider img {
+    width: 100%;
+    border-bottom-left-radius: $corner;
+    border-top-left-radius: $corner;
+}
+#start {
+    float: right;
+    display: inline-flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+    #app-slider{
+        float: left;
+        display: block;
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    #slider {
+        width: 100%;
+        display: block;
+        img {
+            width: 100%;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+        }
+    }
+    #start{
+        margin-top: 40px;
+        width: 100%;
+    }
+
+}
