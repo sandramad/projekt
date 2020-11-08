@@ -39,6 +39,12 @@
         height: 70px;
     }
 }
+svg{
+    fill: $lightBlack;
+}
+.tech-box:hover > div > svg {
+    fill: $red;
+}
 .tech-box > div > hr {
     width: 25px;
     background: $black;
@@ -49,11 +55,4 @@
     width: 25px;
     background: $orange;
     height: 2px;
-}
-.tech-box > img {
-    max-width: 80px;
-    max-height: 80px;
-    &.npm{
-        max-height: 30px;
-    }
 }

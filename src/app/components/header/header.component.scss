@@ -9,9 +9,11 @@ header {
     float: left;
     width: 50%;
 }
+.desktop ul.menu {
+    float: right;
+}
 .desktop .menu li {
     display: inline;
-    float: right;
     text-align: right;
     margin-right: 20px;
 }
@@ -45,7 +47,7 @@ header {
         float: right;
         text-align: right;
     }
-    .menu ul {
+    ul.menu {
         position: fixed;
         list-style: none;
         margin-left: -100px;

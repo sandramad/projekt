@@ -11,5 +11,13 @@ export class TechComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  onKeydown(event, str) {
+    if (event.key === "Enter") {
+      window.open(str, "_blank");
+    }
+  }
+  window(str) {
+    window.open(str, "_blank");
+  }
+  
 }

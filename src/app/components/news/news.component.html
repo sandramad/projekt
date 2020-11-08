@@ -1,15 +1,15 @@
 <div id="news" name="news">
     <h2>Wiadomości</h2>
     <div  class="arts"  *ngFor="let article of news  | slice:0:visibleNews">    
-        <h3>{{article.title}}</h3>
+        <h3 tabindex="0">{{article.title}}</h3>
         <div class="desktop date">Data dodania: {{article.date | date:'dd.MM.yyyy HH:ss'}}</div>
         <img src="{{article.image}}" alt="Zdjęcie do artykułu {{article.title}}"/>
         <p [innerHTML]="article.text"></p>
   </div>
 
 </div>
-<div class="more">
-    <a [hidden]="visibleNews > sumNews" (click)="nextNews()">
+<div class="more" name="more">
+    <a  href="#more" [hidden]="visibleNews > sumNews" (click)="nextNews()">
         Załaduj więcej <mat-icon class="refresh">refresh</mat-icon>
     </a>
 </div>
